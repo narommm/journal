@@ -1,10 +1,125 @@
-.navigation{
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Vidaloka&display=swap");
+
+html {
+  body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+  }
+}
+.navigation {
+  border: 5px solid rgba(57, 95, 128, 0.3);
+  background-color: whitesmoke;
+  font-family: "Acme", sans-serif;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  position: sticky;
+  top: 0;
+  p {
+    a {
+      color: rgba(57, 95, 128, 1);
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.day {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  background-image: url("../img/fondo9.jpg");
+  background-size: cover;
+
+  font-family: "Vidaloka", serif;
+  .add {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    p{
-        a{
-            text-decoration: none;
-        }
+
+    height: 50%;
+    .add-content {
+      margin: 1em;
+      padding: 2em;
+      flex: 1;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+      }
     }
+    .add-form {
+      margin: 1em;
+      flex: 1;
+      justify-content: space-evenly;
+
+      .date {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1em;
+        input[type="date"]{
+            margin-left: 1rem;
+            border-radius: 0.5rem;
+            border: 3px  #345574 solid;
+            height: 1.5rem;
+        }
+        input[type="checkbox"]{
+            height: 2em;
+        }
+        .btn {
+          width: 20%;
+          height: 2rem;
+
+          
+          align-items: center;
+          text-align: center;
+          
+          border-radius: 0.5rem;
+
+          
+          button{
+            width: 8rem;
+            color: whitesmoke;
+            border: transparent;
+            text-decoration: none;
+            background-color: #345574;
+            &:hover {
+                border: 3px  #345574 solid;
+                color: black;
+                background-color: transparent;
+              }
+          }
+        }
+      }
+      .event {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 2em;
+
+        textarea{
+            margin-left: 1rem;
+            border: 3px  #345574 solid;
+            border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+  .table {
+
+    flex: 1;
+  }
 }
