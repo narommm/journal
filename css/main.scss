@@ -50,10 +50,14 @@
       margin: 1em;
       padding: 2em;
       flex: 1;
-      h1 {
+      h1{
+        text-align:initial;
+      }
+      h2 {
         text-align: center;
       }
       p {
+        margin: 1em;
         text-align: justify;
       }
     }
@@ -122,17 +126,18 @@
     justify-content: center;
    
     margin: 1em;
-    border: 2px solid black;
+
     section{
       margin: 0.5em;
       width: 80%;
-      border: 2px solid blue;
+
       
       .table-hover{
         width: 98%;
         margin: 0.5em;
    
-        border: 2px solid red; 
+        border: 4px solid black; 
+        text-align: center;
         thead{
           margin: 0.5em;
           border: 2px solid aqua;
@@ -143,8 +148,10 @@
           }
         }
         tbody{
-          margin: 0.5em;
-          border: 2px solid purple;
+          tr{
+            border: 2px solid black;
+          }
+          
         }
 
       }

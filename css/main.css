@@ -73,10 +73,15 @@
 }
 
 .day .add .add-content h1 {
+  text-align: initial;
+}
+
+.day .add .add-content h2 {
   text-align: center;
 }
 
 .day .add .add-content p {
+  margin: 1em;
   text-align: justify;
 }
 
@@ -169,19 +174,18 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: 1em;
-  border: 2px solid black;
 }
 
 .day .table section {
   margin: 0.5em;
   width: 80%;
-  border: 2px solid blue;
 }
 
 .day .table section .table-hover {
   width: 98%;
   margin: 0.5em;
-  border: 2px solid red;
+  border: 4px solid black;
+  text-align: center;
 }
 
 .day .table section .table-hover thead {
@@ -194,8 +198,7 @@
   border: 2px solid green;
 }
 
-.day .table section .table-hover tbody {
-  margin: 0.5em;
-  border: 2px solid purple;
+.day .table section .table-hover tbody tr {
+  border: 2px solid black;
 }
 /*# sourceMappingURL=main.css.map */
