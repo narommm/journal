@@ -1,20 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Journal</title>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <div class="navigation">
-            <p><a href="">Journal</a></p>
-            <nav>
-                <p><a href="">add</a></p>
-            </nav>
+      <div class="navigation">
+        <p><a href="">Journal</a></p>
+        <nav>
+          <p><a href="">add</a></p>
+        </nav>
+      </div>
+      <div class="day">
+        <div class="add">
+          <div class="add-content">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+              asperiores inventore totam fugiat praesentium repudiandae sed
+              autem magni illo neque corrupti, debitis animi eos incidunt
+              dolorum mollitia sit assumenda quibusdam deserunt aperiam in
+              recusandae quis deleniti nisi. Dignissimos, ullam aperiam!
+            </p>
+          </div>
+          <form action="" class="add-form">
+            <div class="date">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" placeholder="-/-/-" />
+              <label for="accident">Accident</label>
+              <input
+                type="checkbox"
+                id="accident"
+                name="accident"
+                placeholder="-/-/-"
+              />
+              <div class="btn">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  id="submit_btn"
+                  disabled
+                >
+                  Ingresar
+                </button>
+              </div>
+            </div>
+
+            <div class="event">
+              <label for="events">Events </label>
+              <textarea
+                name="events"
+                id="events"
+                cols="60"
+                rows="10"
+                placeholder="Event,Event,Event"
+              ></textarea>
+            </div>
+          </form>
         </div>
-    </div> 
-</body>
+        <div class="table">
+          <section>
+            <table class="table table-hover">
+              <thead>
+                <tr class="table-dark">
+                  <th scope="col">Date</th>
+                  <th scope="col">Events</th>
+                  <th scope="col">Accidents?</th>
+                </tr>
+              </thead>
+              <tbody id="table_body"></tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
 </html>
